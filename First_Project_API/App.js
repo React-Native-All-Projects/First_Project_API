@@ -47,7 +47,7 @@ const App = () =>{
   //------------------------------------------------------------------------Post With Body
     const PostWithBody = async () => {
         await fetch('http://16ac-81-28-126-167.ngrok.io/api/TestAPI/PutWithBody',{
-          method:'PUT',
+          method:'POST',
             headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json'
