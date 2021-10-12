@@ -7,7 +7,7 @@ const App = () =>{
     //------------------------------------------------------------------------Get ***********************************
     const Get = async () => {
     try {
-      let response = await fetch('http://073b-81-28-126-167.ngrok.io/api/Shared/Get');
+      let response = await fetch('http://16ac-81-28-126-167.ngrok.io/api/TestAPI/Get');
       let json = await response.json();
           console.log( 'Get');
       console.log(json);
@@ -19,7 +19,7 @@ const App = () =>{
 
     const GetWithURL = async (data) => {
     try {
-      let response = await fetch('http://073b-81-28-126-167.ngrok.io/api/Shared/GetWithURL/'+data);
+      let response = await fetch('http://16ac-81-28-126-167.ngrok.io/api/TestAPI/GetWithURL/'+data);
       let json = await response.json();
       console.log( 'Get With URL');
       console.log(json);
@@ -33,7 +33,7 @@ const App = () =>{
 
     //------------------------------------------------------------------------Post ****************************************
     const Post = async () => {
-        await fetch('http://073b-81-28-126-167.ngrok.io/api/Shared/Put',{
+        await fetch('http://16ac-81-28-126-167.ngrok.io/api/TestAPI/Put',{
           method:'PUT',
         }).then(async (response) =>{
             let json = await response.json();
@@ -46,7 +46,7 @@ const App = () =>{
 
   //------------------------------------------------------------------------Post With Body
     const PostWithBody = async () => {
-        await fetch('http://073b-81-28-126-167.ngrok.io/api/Shared/PutWithBody',{
+        await fetch('http://16ac-81-28-126-167.ngrok.io/api/TestAPI/PutWithBody',{
           method:'PUT',
             headers: {
     Accept: 'application/json',
@@ -72,7 +72,7 @@ const App = () =>{
 
   //------------------------------------------------------------------------Put ****************************************
     const Put = async () => {
-        await fetch('http://073b-81-28-126-167.ngrok.io/api/Shared/Put',{
+        await fetch('http://16ac-81-28-126-167.ngrok.io/api/TestAPI/Put',{
           method:'PUT',
         }).then(async (response) =>{
             let json = await response.json();
@@ -85,7 +85,7 @@ const App = () =>{
 
   //------------------------------------------------------------------------Put With Body
     const PutWithBody = async () => {
-        await fetch('http://073b-81-28-126-167.ngrok.io/api/Shared/PutWithBody',{
+        await fetch('http://16ac-81-28-126-167.ngrok.io/api/TestAPI/PutWithBody',{
           method:'PUT',
             headers: {
     Accept: 'application/json',
@@ -107,7 +107,7 @@ const App = () =>{
 
     //------------------------------------------------------------------------Delete *********************************
     const DeleteWithURL = async (Id) => {
-        await fetch('http://073b-81-28-126-167.ngrok.io/api/Shared/DeleteWithURL/'+Id,{
+        await fetch('http://16ac-81-28-126-167.ngrok.io/api/TestAPI/DeleteWithURL/'+Id,{
           method:'Delete',
         }).then(async (response) =>{
           let json = await response.json();
